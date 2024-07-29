@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 300px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-box h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 30px;
+   
+    padding: 10px 0;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #4caf50;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    background: #4caf50;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+    .login-box {
+        width: 60%;
+    }
+}
